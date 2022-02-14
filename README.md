@@ -8,3 +8,10 @@ Simples Aplicação ETL
 - Utilizei concorrência, através das Go Routines, para lidar com as requisições http (Que poderiam ser muitas) na etapa de Extract, assim possibilitando uma maior velocidade.
 - Para ordenação utilizei o algoritmo Merge Sort
 - Para criar a Api HTTP utilizei a biblioteca Echo
+
+Caso queira executar em sua máquina local
+- Instale o Go https://go.dev/doc/install
+- Entre no diretório do projeto
+- de go build no projeto
+- execute o arquivo gerado
+- a aplicação estará na porta 3000. Basta fazer um request na porta 3000 que o programa irá retornar um Slice ordenado
