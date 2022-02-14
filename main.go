@@ -51,16 +51,12 @@ func run() []float64{
 
 	unorderedNumbers := append(dataGroup1, dataGroup2...)
 	orderedNumbers := mergeSort(unorderedNumbers)
-	for _,v := range orderedNumbers {
-		fmt.Println(v)
-	}
 	return orderedNumbers
 }
 
 func extract(pageNumber int) (totalNumbers []float64){
 	var mapBody = map[string][]float64{}
 	for {
-		fmt.Println(pageNumber)
 		endpoint := "http://challenge.dienekes.com.br/api/numbers?page=" + strconv.FormatInt(int64(pageNumber), 10)
 		response, err := http.Get(endpoint)
 
