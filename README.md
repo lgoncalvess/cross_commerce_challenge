@@ -12,6 +12,6 @@ Simples Aplicação ETL
 Caso queira executar em sua máquina local
 - Instale o Go https://go.dev/doc/install
 - Entre no diretório do projeto
-- de go build no projeto
-- execute o arquivo gerado
-- a aplicação estará na porta 3000. Basta fazer um request na porta 3000 que o programa irá retornar um Slice ordenado
+- compile o projeto
+- execute o arquivo compilado
+-  Basta fazer um request na porta 3000 que o programa irá retornar um Slice ordenado
